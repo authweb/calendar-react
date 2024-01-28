@@ -1,0 +1,28 @@
+.calendar-container {
+  background-color: #313236;
+  color: white;
+  padding: 1.5rem 2rem 1rem;
+  width: 375px;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+}
+.scheduler-container {
+  flex-grow: 1; /* Занимает оставшееся пространство */
+  /* Стили для Scheduler */
+}
+
+/* Стили для внешнего контейнера */
+.app-container {
+  display: flex;
+  height: 100vh; /* Пример высоты, можете настроить под свои нужды */
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+}

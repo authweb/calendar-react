@@ -1,0 +1,23 @@
+/* Schedule.css */
+.schedule {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .schedule-event {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .event-time {
+    font-weight: bold;
+  }
+  
+  .event-details {
+    flex-grow: 1;
+    padding-left: 10px;
+  }
+  

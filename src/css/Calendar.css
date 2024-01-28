@@ -1,0 +1,138 @@
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  text-align: inherit;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+  background-image: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+}
+
+.headline {
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.125;
+  display: inline-block;
+}
+
+.end {
+  display: flex;
+  margin-left: auto;
+}
+
+.calendar-day-names {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  color: #c2c2c2;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+.calendar-day > span {
+  display: block;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 1.1428;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 50%;
+}
+
+.calendar-day__view span {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+}
+
+.calendar-day,
+.calendar-weekday {
+  width: 14.28367%;
+  padding: 0.5rem 0.25rem;
+  font-size: 0.875rem;
+}
+
+.calendar-day {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-day__view {
+  border: 1px solid transparent;
+  padding: 0.25rem;
+  margin-left: -1px;
+}
+
+.calendar-day:not(.empty):hover {
+  background-color: #3e3e3e;
+}
+
+.calendar-day.empty {
+  color: #555;
+}
+
+.calendar-day.today {
+  color: white;
+  border: 1px solid #0078d7;
+  border-radius: 10px;
+}
+
+.button {
+  display: inline-flex;
+  vertical-align: middle;
+  flex-shrink: 0;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  border-radius: 0.625rem;
+  padding: 0.25rem 0.5rem;
+  background-image: linear-gradient(transparent, transparent);
+  color: #fff;
+  position: relative;
+}
+
+/* Стили для кнопок переключения месяцев */
+.calendar-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.calendar-header button:hover {
+  opacity: 0.8;
+}
